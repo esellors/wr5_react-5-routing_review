@@ -34,23 +34,26 @@ class Character extends React.Component {
 
     return (
       <section className="character-details">
-        {loading ? (
-          'Loading...'
-        ) : (
-          <>
-            <h2>Character Details</h2>
-            <h3>{name}</h3>
-            <p>aka {nickname}</p>
-            <figure>
-              <img src={img} alt="Character" />
-              <figcaption>
-                {name} played by {portrayed}
-              </figcaption>
-            </figure>
-            <p>Birthdate: {birthday}</p>
-            <p>Dead or Alive: {status}</p>
-          </>
-        )}
+        {
+          loading 
+            ? (
+              <p>Loading...</p>
+            ) : (
+              <>
+                <h2>Character Details</h2>
+                <h3>{name}</h3>
+                <p>aka {nickname}</p>
+                <figure>
+                  <img src={img} alt="Character" />
+                  <figcaption>
+                    {name} played by {portrayed}
+                  </figcaption>
+                </figure>
+                <p>Birthdate: {birthday}</p>
+                <p>Dead or Alive: {status}</p>
+              </>
+            )
+        }
       </section>
     );
   }

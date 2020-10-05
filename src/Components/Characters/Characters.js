@@ -40,7 +40,12 @@ class Characters extends React.Component {
       <section className="characters">
         <h2>Characters</h2>
         <div className="characters-mapped">
-          {loading ? <p>Loading...</p> : charactersMapped}
+          {
+            loading 
+              ? (
+              <p>Loading...</p>
+              ) : charactersMapped
+          }
         </div>
       </section>
     );
