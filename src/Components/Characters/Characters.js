@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import './Characters.scss';
 
 class Characters extends React.Component {
@@ -30,7 +31,9 @@ class Characters extends React.Component {
           <h4>{char.name}</h4>
           <figure>
             <img src={char.img} alt="Character" />
-            <figcaption>View Details</figcaption>
+            <figcaption>
+              <Link to={`/characters/${char.char_id}`}>View Details</Link>
+            </figcaption>
           </figure>
         </div>
       );

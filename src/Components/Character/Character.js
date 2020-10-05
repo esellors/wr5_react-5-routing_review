@@ -12,7 +12,7 @@ class Character extends React.Component {
   }
   componentDidMount() {
     axios
-      .get(`https://breakingbadapi.com/api/characters/1`) // Want to get character dynamically
+      .get(`https://breakingbadapi.com/api/characters/${this.props.match.params.id}`) // Want to get character dynamically
       .then((res) =>
         this.setState({
           loading: false,

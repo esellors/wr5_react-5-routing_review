@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.scss';
 import Header from './Components/Header/Header';
-import Landing from './Components/Landing/Landing';
 import Footer from './Components/Footer/Footer';
+import routes from './routes';
 
 export default function App() {
   return (
     <div className="App">
       <Header />
       <main>
-        <Landing />
+        { routes }
       </main>
       <Footer />
     </div>

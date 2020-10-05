@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.scss';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -7,8 +8,12 @@ const Header = () => {
       <h2>Breaking Routing Bad</h2>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Characters</li>
+            <Link to='/'>
+              <li>Home</li>
+            </Link>
+            <Link to='/characters'>
+              <li>Characters</li>
+            </Link>
         </ul>
       </nav>
     </header>
