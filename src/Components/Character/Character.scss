@@ -1,0 +1,32 @@
+.character-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    h3 {
+      margin-bottom: 5px;
+    }
+  
+    p {
+      margin-top: 0;
+    }
+  
+    figure {
+      margin-top: 0;
+      position: relative;
+      max-width: 300px;
+      align-self: center;
+  
+      img {
+        width: 100%;
+      }
+  
+      figcaption {
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        color: #fff;
+        background: rgba(0, 0, 0, .75);
+      }
+    }
+  }

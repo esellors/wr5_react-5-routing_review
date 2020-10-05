@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+
+  body {
+    margin: 0;
+
+    .App {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: minmax(115px, 15vh) minmax(75vh, auto) 10vh;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      font-family: sans-serif;
+      text-align: center;
+    
+      main {
+        grid-area: 2 / 1 / span 1 / span 1;
+      }
+    }
+  }
+}
+

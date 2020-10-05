@@ -1,0 +1,31 @@
+.characters {
+    figure {
+      width: 200px;
+  
+      img {
+        width: 100%;
+      }
+  
+      figcaption {
+        margin-top: 5px;
+      }
+    }
+  
+    .character {
+      margin-top: 10px;
+  
+      h4 {
+        margin-bottom: 0;
+      }
+  
+      p {
+        margin: 5px 0;
+      }
+    }
+  
+    .characters-mapped {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
